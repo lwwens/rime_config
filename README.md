@@ -1,5 +1,3 @@
-[TOC]
-
 # Rime-config
 
 Rime 输入法配置
