@@ -4,7 +4,7 @@ Rime 输入法配置
 
 # 词库
 
-- `wzyboy.dict.yaml` —— wzyboy 通过[点儿词库](http://gaokuan.ys168.com/)制作的词库
+- `fcitx_wbx.092m.dict.yaml` —— wzyboy 通过[点儿词库](http://gaokuan.ys168.com/)制作的词库
 - `fcitx_wbx.dict.yaml` —— Fcitx 自带的五笔词库
 - `zz.dict.yaml` —— 极点五笔 zz 快速输入词库
 - `wubi86.dict.yaml` —— [rime-wubi 五筆字型](https://github.com/rime/rime-wubi)

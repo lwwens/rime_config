@@ -1,0 +1,17 @@
+# Rime custom settings
+# encoding: utf-8
+# Weiwen Lai <lai_wei_wen@qq.com>
+#
+# 在 patch 中，最好直接使用 '/' 修改对应对象或列表的值
+
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Fri Feb 14 00:53:35 2020"
+  rime_version: 1.5.3
+patch:
+  style/color_scheme: so_young
+  style/font_face: Consola
+  style/font_point: 14
+  style/inline_preedit: true  # 内嵌编码（仅支持TSF）

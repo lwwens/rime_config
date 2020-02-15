@@ -1,0 +1,38 @@
+# Rime custom settings
+# encoding: utf-8
+# Weiwen Lai <lai_wei_wen@qq.com>
+#
+# 在 patch 中，最好直接使用 '/' 修改对应对象或列表的值
+
+patch:
+  switches/@0/reset: 1
+  switches/@1/reset: 0
+  switches/@2/reset: 0
+  switches/@3/reset: 0
+  translator/enable_sentence: false
+  # Andriod 同文输入法字典
+  translator/dictionary: fcitx_wbx.092m
+  key_binder/bindings:
+    # 空码时按空格键清空输入码
+    - { when: has_menu, accept: space, send: space }
+    - { when: composing, accept: space, send: Escape }
+    # 翻页
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: has_menu, accept: comma, send: Page_Up }
+    - { when: has_menu, accept: period, send: Page_Down }
+  engine/translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - table_translator
+    - table_translator@custom_phrase
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
+  speller/max_code_length: 4
+  speller/auto_select: true
+  speller/auto_select_unique_candidate: true
